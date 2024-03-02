@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            border-radius: 10px;
+            border: 5px solid black;
+            background: rgb(90, 58, 58);
+            /* width: 500px;
+            height: 400px; */
+            height: 400px;
+            width: 500px;
+            
+
+            /* flex property */
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            /* justify-content: right; */
+            /* justify-content: left; */
+            /* justify-content: space-around; */
+            /* justify-content: flex-end; */
+            /* justify-content: left; */
+            /* justify-content: safe; */
+            /* justify-content: last baseline; */
+            /* justify-content: space-between; */
+            /* justify-content: start; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: baseline; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+
+            
+        }
+        @media (max-width:720px) and (min-width:480px){
+            .container{
+                flex-direction: column;
+
+            }
+            
+        }
+        /* @media  {
+            .container{
+                flex-direction: column;
+                background: bisque;
+                
+            }
+            
+        } */
+        
+        .box{
+            border: 5px solid orange;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            margin: 3px;
+            color: aqua;
+            background: orangered;
+        }
+        .box1{
+            /* width: 100px; */
+            /* flex-grow: 2;
+            flex-shrink: 1; */
+            /* flex-basis: 200px; */
+            /* align-self: center; */
+
+        }
+        .box2{
+            /* width: 100px; */
+            /* align-self: flex-start; */
+        }
+        .box3{
+            /* width: 100px; */
+            /* align-self: flex-end; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Display flex
+    </h1>
+    <div class="container" id="flex">
+        <div class="box box1">
+            <h2>1</h2>
+        </div>
+        <div class="box box2">
+            <h2>2</h2>
+        </div>
+        <div class="box box3">
+            <h2>3</h2>
+        </div>
+        <!-- <div class="box box1">
+            <h2>4</h2>
+        </div>
+        <div class="box box2">
+            <h2>5</h2>
+        </div>
+        <div class="box box3">
+            <h2>6</h2>
+        </div>
+        <div class="box box1">
+            <h2>7</h2>
+        </div>
+        <div class="box box2">
+            <h2>8</h2>
+        </div>
+        <div class="box box3">
+            <h2>9</h2> -->
+        </div>
+    </div>
+</body>
+</html>
