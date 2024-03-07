@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    #question {
+      margin-bottom: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #b134c2;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc99d3;
+    }
+    #headline {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <br>
+  <div id="quiz-container">
+    <h2 id="headline">Interactive Quiz</h2>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="submit-btn">Submit Answer</button>
+    <button id="next-btn" style="display: none;">Next Question</button>
+    <div id="feedback"></div>
+  </div>
+
+  <script>
+    // Define quiz questions and answers
+    const quizData = [
+      {
+        question: "What is the capital of France?",
+        options: ["Paris", "London", "Berlin", "Rome"],
+        answer: "Paris"
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Mars", "Jupiter", "Venus", "Mercury"],
+        answer: "Mars"
+      },
+      {
+        question: "What is the powerhouse of the cell?",
+        options: ["Mitochondria", "Nucleus", "Ribosome", "Endoplasmic reticulum"],
+        answer: "Mitochondria"
+      }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    // DOM elements
+    const questionElement = document.getElementById('question');
+    const optionsElement = document.getElementById('options');
+    const submitBtn = document.getElementById('submit-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const feedbackElement = document.getElementById('feedback');
+
+    // Function to display current question and options
+    function displayQuestion() {
+      const currentQuestion = quizData[currentQuestionIndex];
+      questionElement.textContent = currentQuestion.question;
+
+      optionsElement.innerHTML = '';
+      currentQuestion.options.forEach(option => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.addEventListener('click', () => selectAnswer(option));
+        optionsElement.appendChild(button);
+      });
+
+      submitBtn.style.display = 'block';
+      nextBtn.style.display = 'none';
+      feedbackElement.textContent = '';
+    }
+
+    // Function to handle user selection of an answer
+    function selectAnswer(selectedOption) {
+      const currentQuestion = quizData[currentQuestionIndex];
+      const correctAnswer = currentQuestion.answer;
+
+      if (selectedOption === correctAnswer) {
+        score++;
+        feedbackElement.textContent = 'Correct!';
+      } else {
+        feedbackElement.textContent = `Incorrect. The correct answer is ${correctAnswer}.`;
+      }
+
+      submitBtn.style.display = 'none';
+      nextBtn.style.display = 'block';
+    }
+
+    // Function to move to the next question
+    function nextQuestion() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < quizData.length) {
+        displayQuestion();
+      } else {
+        endQuiz();
+      }
+    }
+
+    // Function to end the quiz
+    function endQuiz() {
+      questionElement.textContent = 'Quiz ended';
+      optionsElement.innerHTML = '';
+      submitBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+      feedbackElement.textContent = `Your score: ${score}/${quizData.length}`;
+    }
+
+    // Event listeners
+    submitBtn.addEventListener('click', () => selectAnswer());
+    nextBtn.addEventListener('click', nextQuestion);
+
+    // Initial setup
+    displayQuestion();
+  </script>
+</body>
+</html>
