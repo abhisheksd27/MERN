@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f51414, #ff9500); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #333; /* Dark gray calculator background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    perspective: 800px; /* Add perspective for 3D effect */
+}
+
+.display {
+    background-color: #444; /* Darker gray display background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow */
+}
+
+#result {
+    width: 100%;
+    border: none;
+    font-size: 28px;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff; /* White text color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    font-size: 24px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for transform */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+    background: linear-gradient(to bottom, #666, #333); /* Gradient background */
+}
+
+.number {
+    background-color: #888; /* Dark gray number button background */
+    color: #fff; /* White text color */
+}
+
+.operator {
+    background-color: #ff9500; /* Orange operator button background */
+    color: #fff; /* White text color */
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #999, #666); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Add a subtle lift effect on hover */
+}
+
+button:active {
+    background-color: #ccc; /* Light gray on click */
+    transform: translateY(2px); /* Add a subtle press effect on click */
+}
+
+button#equals {
+    font-size: 32px; /* Increase font size */
+    grid-column: span 2; /* Span two columns to make it wider */
+}
