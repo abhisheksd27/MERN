@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbhiBytes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...replace with actual integrity hash..." crossorigin="anonymous" />
+    <style>
+        .navbar:hover {
+            transform: rotateX(5deg) translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .inline-block:hover{
+            transform: rotateX(5deg) translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .move-on-hover:hover {
+            transform: translateX(5px) translateY(-5px); /* Adjust the values as needed */
+            transition: transform 0.3s ease;
+        }
+        .center-button li:hover .fa-icon {
+            transform: scale(1.2); /* Adjust the scale value as needed */
+        }
+        .fa-icon {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container min-h-screen min-w-full  bg-zinc-900 text-white px-28 py-6  relative" id="home">
+    <!-- navbar -->
+        <div class="container min-w-full border-white-600">
+            <nav class="flex item-center border-red-200 bg-gray-50 dark:bg-neutral-950 dark:border-white-600 border-2 rounded-md  navbar">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo3.png" class="h-8" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white italic">Bytes</span>
+                    </a>
+                </div>
+                
+            </nav>
+        </div>
+    <!-- Home -->
+        <div class="mt-48 ">
+            <h1 class="text-6xl font-bold leading-normal move-on-hover" >Abhishek<br>Banglore, India</h1>
+
+                <img src="images/pngwing.com.png" class="w-full xl:w-1/3 xl:absolute bottom-0 right-2 move-on-hover">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="center-button items-center ">
+            
+            <a href="templates/about.htm" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 hover:from-blue-500 hover:to-purple-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        About
+                    </span>
+                </button>
+            </a>
+            <a href="templates/education.htm" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 hover:from-blue-500 hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Education
+                    </span>
+                </button>
+            </a> 
+        
+            <!-- Button 2 -->
+            <a href="templates/skills.html" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Skills
+                    </span>
+                </button>
+            </a>
+            <a href="templates/experience.html" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-600 to-blue-500 hover:from-blue-500 hover:to-cyan-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        experience
+                    </span>
+                </button>
+            </a>
+        
+            <!-- Button 3 -->
+            <a href="templates/projects.htm" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 hover:from-blue-500 hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        projects
+                    </span>
+                </button>
+            </a> 
+
+            <a href="templates/blog.html" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 hover:from-blue-500 hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Blogs
+                    </span>
+                </button>
+            </a>
+
+            <a href="templates/contact.html" class="inline-block">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-600 to-blue-500 hover:from-blue-500 hover:to-green-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 transform transition-transform duration-300 ease-in-out">
+                    <span class="relative px-5 py-2.5 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Contact
+                    </span>
+                </button>
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="center-button items-center">
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fab fa-github-square fa-2x fa-icon mx-2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fab fa-dribbble fa-2x fa-icon mx-2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fab fa-twitter fa-2x fa-icon mx-2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fab fa-linkedin fa-2x fa-icon mx-2"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <i class="fab fa-instagram fa-2x fa-icon mx-2"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        
+        
+    
+
+    
+</body>
+</html>

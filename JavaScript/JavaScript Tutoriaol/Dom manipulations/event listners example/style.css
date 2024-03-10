@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to 100% of the viewport height */
+    display: flex; /* Use flexbox to center the content vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.boxes {
+    padding: 10px 20px;
+    border: 2px solid #ff5c5c;
+    border-radius: 5px;
+    background-color: #ff5c5c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.boxes:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+.hidden-content {
+    display: none; /* Initially hide the content */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 600px; /* Set a fixed width for the content */
+    height: 400px; /* Set a fixed height for the content */
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateZ(30px);
+    text-align: left; /* Align text properly */
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.5s ease; /* Add a transition for smooth animation */
+    position: fixed; /* Position the content absolutely */
+    top: 50%; /* Position the top of the content at 50% of the viewport */
+    left: 50%; /* Position the left of the content at 50% of the viewport */
+    transform: translate(-50%, -50%); /* Adjust the position to center the content */
+}
+
+.hidden-content.reveal-btn {
+    display: block;
+    opacity: 1; /* Set opacity to 1 when content is revealed */
+}
+
+#main-heading {
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 36px;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

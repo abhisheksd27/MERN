@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Limiting the maximum width for responsiveness */
+    margin: 50px auto;
+    background: linear-gradient(to right, #ff7676, #ffaf7b); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    padding: 20px;
+    border-color: white;
+}
+
+#main-heading {
+    text-align: center;
+    color: #0e0606;
+}
+
+.movie-list {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-item:hover {
+    background-color: #f0f0f0;
+}

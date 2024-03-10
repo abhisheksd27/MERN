@@ -1,0 +1,70 @@
+body {
+    background-color: #dbd2dd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #bceee3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Rest of the CSS remains the same */
+
+.header {
+    text-align: center;
+    background-color: #0942ac;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.text-area {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+}
+
+.person {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-area {
+    text-align: center;
+}
+
+#new-quote {
+    background-color: #3fd3dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-quote:hover {
+    background-color: #081274;
+}
