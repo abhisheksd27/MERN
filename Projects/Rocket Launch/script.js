@@ -10,4 +10,4 @@ const move= (e)=> {
 
     myDiv.style.left = x-100 +"px";
     myDiv.style.top= y-100 +"px"
-}
+}   
