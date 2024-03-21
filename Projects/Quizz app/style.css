@@ -1,0 +1,109 @@
+*{
+    border: 0;
+    padding: 0;
+    font-family:  'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(27, 10, 78);
+
+}
+.app{
+    background: linear-gradient(135deg,white,rgb(45, 11, 124));
+    border: 2px solid black;
+    
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px auto 0;
+
+}
+
+.app h1{
+    text-align: center;
+    color: lightseagreen;
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+.quizz{
+    padding: 20px 0;
+
+}
+.quizz h2{
+    font-size: 22px;
+    color: rgb(190, 30, 30);
+    text-align: center;
+}
+
+.btn{
+    background: white;
+    color: #222;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+}
+
+.btn:hover{
+    background: rgb(28, 30, 168);
+    
+}
+
+#next-btn{
+    align-self: center;
+    margin: 20px auto 0;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#next-btn:hover{
+    background: darkgreen;
+}
+
+.correct{
+    background: #9aeabc;
+}
+.wrong{
+    background: #ff9393;
+}
+
+.correct {
+    background-color: green;
+  }
+  
+  .wrong {
+    background-color: red;
+  }
+
+
+  /* Style for reset button */
+#reset-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f0e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #d75b00;
+}
