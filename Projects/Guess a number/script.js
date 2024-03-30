@@ -29,7 +29,7 @@ function guessNumber() {
                 resetGame();
             },3000)
         }
-
+ 
     }
 }
 
